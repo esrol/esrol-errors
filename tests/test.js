@@ -9,7 +9,7 @@ describe('Errors', () => {
 
     describe('Set error with number and description', () => {
       it('Should return true', () => {
-        expect(errors.setWithNumber(1, 'Some message')).to.equal(true);
+        expect(errors.registerErrorWithNumber(1, 'Some message')).to.equal(true);
       });      
     });
 
@@ -20,7 +20,7 @@ describe('Errors', () => {
       }); 
 
       it('Should return "Message"', () => {
-        errors.setWithNumber(2, 'Message');
+        errors.registerErrorWithNumber(2, 'Message');
         expect(errors.getByNumber(2)).to.equal('Message');
       });  
 
@@ -42,7 +42,7 @@ describe('Errors', () => {
   describe('Errors Success...', () => {
 
     it('Should throw an error', () => {
-      expect(() => { errors.error('Success', 1) }).to.throw(Error);    
+      expect(() => { errors.error('Success', 1); }).to.throw(Error);    
     });
 
     it('Should throw an error with message "Success" and number "1"', () => {
@@ -73,7 +73,9 @@ describe('Errors', () => {
 
     describe('Register the same number twice', () => {
       it(should, () => {
-        expect(() => { errors.setWithNumber(1, 'message') }).to.throw(Error);
+        expect(() => { 
+          errors.registerErrorWithNumber(1, 'message');
+        }).to.throw(Error);
       });      
     });
 
