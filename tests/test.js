@@ -79,6 +79,22 @@ describe('Errors', () => {
       });      
     });
 
+    describe('When registerErrorWithNumber with non number', () => {
+      it(should, () => {
+        expect(() => { 
+          errors.registerErrorWithNumber(2.3, 'message');
+        }).to.throw(Error);
+      });      
+    });    
+
+    describe('When registerErrorWithNumber without description', () => {
+      it(should, () => {
+        expect(() => { 
+          errors.registerErrorWithNumber(5);
+        }).to.throw(Error);
+      });      
+    });       
+
   });  
   
 });
