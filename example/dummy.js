@@ -1,5 +1,5 @@
 'use strict';
-let Errors = require('xena-errors');
+let Errors = require('esrol-errors');
 let errors = new Errors();
 
 errors.registerErrorWithNumber('Some error message', 1);
