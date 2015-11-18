@@ -1,15 +1,15 @@
 {
-  "name": "xena-errors",
+  "name": "esrol-errors",
   "description": "Later",  
-  "version": "0.3.2",
+  "version": "0.3.3",
   "main": "index.js",
   "author": "Ivaylo Ivanov <Ivchoyyyy@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ivaylopivanov/xena-errors"
+    "url": "git://github.com/esrol/esrol-errors"
   },
   "bugs": {
-    "url": "https://github.com/ivaylopivanov/xena-errors"
+    "url": "https://github.com/esrol/esrol-errors"
   },  
   "license": "MIT",
   "keywords": [],
