@@ -1,29 +1,39 @@
 {
   "name": "esrol-errors",
-  "description": "Later",  
-  "version": "0.3.4",
+  "description": "An Errors Class for esrol-server-app. It is used for registering new custom errors with numbers, can get a single or all errors in the registry, has a custom throw error method.",
+  "version": "0.3.5",
   "main": "index.js",
-  "author": "Ivaylo Ivanov <Ivchoyyyy@gmail.com>",
+  "author": "Ivaylo Ivanov <ivaylo.ivanov.ipi@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git://github.com/esrol/esrol-errors"
   },
   "bugs": {
     "url": "https://github.com/esrol/esrol-errors"
-  },  
+  },
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+      "esrol",
+    "errors",
+    "error",
+    "handling"
+  ],
   "engines": {
     "node": ">= 4.0.0"
-  },    
+  },
   "config": {},
   "scripts": {
-    "test": "node_modules/.bin/mocha ./tests/test"
-  },  
+    "test": "node_modules/.bin/mocha ./tests/test",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha ./tests/test",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
   "dependencies": {
     "errors": "^0.3.0"
   },
   "devDependencies": {
+    "debug": "^2.2.0",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.1",
     "chai": "^3.4.0",
     "mocha": "^2.3.3"
   }
