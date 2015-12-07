@@ -1,4 +1,6 @@
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
 
 # esrol-errors
 An Errors Class for esrol-server-app. It is used for registering new custom errors with numbers, can get a single or all errors in the registry, has a custom throw error method.
@@ -51,8 +53,8 @@ try {
 </dl>
 <a name="Errors"></a>
 ## Errors
-**Access:** public  
-**Author:** Ivaylo Ivanov  
+**Access:** public
+**Author:** Ivaylo Ivanov
 <a name="new_Errors_new"></a>
 ### new Errors()
 An Errors Class for esrol-server-app.
@@ -64,12 +66,12 @@ has a custom throw error method.
 ## registerErrorWithNumber(description, number) ⇒ <code>boolean</code>
 Add a new error message and corresponding number to the registry.
 
-**Returns**: <code>boolean</code> - true - returns true if adding was successful  
+**Returns**: <code>boolean</code> - true - returns true if adding was successful
 **Throws**:
 
 - <code>[error](#error)</code> error - when incorrect arguments have been passed
 
-**Access:** public  
+**Access:** public
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -80,8 +82,8 @@ Add a new error message and corresponding number to the registry.
 ## getByNumber(number) ⇒ <code>object</code>
 Get an error by it's number.
 
-**Returns**: <code>string</code> - - returns the message of the error  
-**Access:** public  
+**Returns**: <code>string</code> - - returns the message of the error
+**Access:** public
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -92,13 +94,13 @@ Get an error by it's number.
 Get the whole registry with all the errors. This method returns
 the output of getAll from the Register class.
 
-**Returns**: <code>object</code> - - returns all the errors in the registry  
-**Access:** public  
+**Returns**: <code>object</code> - - returns all the errors in the registry
+**Access:** public
 <a name="error"></a>
 ## error(message, code) ⇒ <code>[error](#error)</code>
 Custom method for error handling.
 
-**Access:** public  
+**Access:** public
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -112,9 +114,8 @@ MIT © [Ivaylo Ivanov]()
 
 [npm-image]: https://badge.fury.io/js/esrol-errors.svg
 [npm-url]: https://npmjs.org/package/esrol-errors
-[travis-image]: https://travis-ci.org/ivaylopivanov/esrol-errors.svg?branch=master
-[travis-url]: https://travis-ci.org/ivaylopivanov/esrol-errors
-[daviddm-image]: https://david-dm.org/ivaylopivanov/esrol-errors.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/ivaylopivanov/esrol-errors
-[coveralls-image]: https://coveralls.io/repos/ivaylopivanov/esrol-errors/badge.svg
-[coveralls-url]: https://coveralls.io/r/ivaylopivanov/esrol-errors
+[travis-image]: https://travis-ci.org/esrol/esrol-errors.svg?branch=master
+[travis-url]: https://travis-ci.org/esrol/esrol-errors
+[coveralls-image]: https://coveralls.io/repos/esrol/esrol-errors/badge.svg
+[coveralls-url]: https://coveralls.io/r/esrol/esrol-errors
+
