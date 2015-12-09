@@ -55,6 +55,16 @@ describe('Errors', () => {
       }
     });
 
+    it('Should throw an error without error explanation', () => {
+      try {
+        errors.error('Success');
+      } catch(e) {
+        expect(e.code).to.equal(601);
+        expect(e.message).to.equal('Success');
+        expect(e.explanation).to.be.an('undefined');
+      }
+    });
+
     it('Should throw an error with message "Success #2" and number "2"', () => {
       try {
         errors.error('Success #2', 2);
