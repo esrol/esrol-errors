@@ -1,7 +1,7 @@
 {
   "name": "esrol-errors",
   "description": "An Errors Class for esrol-server-app. It is used for registering new custom errors with numbers, can get a single or all errors in the registry, has a custom throw error method.",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "main": "index.js",
   "author": "Ivaylo Ivanov <ivaylo.ivanov.ipi@gmail.com>",
   "repository": {

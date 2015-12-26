@@ -5,6 +5,7 @@
 # esrol-errors
 An Errors Class for esrol-server-app. It is used for registering new custom errors with numbers, can get a single or all errors in the registry, has a custom throw error method.
 
+*Part of [Esrol](https://github.com/esrol/esrol)*
 
 ## Installation
 
@@ -31,12 +32,7 @@ try {
 }
 ```
 
-## Classes
-<dl>
-<dt><a href="#Errors">Errors</a></dt>
-<dd></dd>
-</dl>
-## Functions
+## Methods
 <dl>
 <dt><a href="#registerErrorWithNumber">registerErrorWithNumber(description, number)</a> ⇒ <code>boolean</code></dt>
 <dd><p>Register / set an error with a number.</p>
@@ -51,17 +47,6 @@ try {
 <dd><p>Custom method for error handling.</p>
 </dd>
 </dl>
-<a name="Errors"></a>
-## Errors
-**Access:** public
-**Author:** Ivaylo Ivanov
-<a name="new_Errors_new"></a>
-### new Errors()
-An Errors Class for esrol-server-app.
-It is used for registering new custom errors with numbers,
-can get a single or all errors in the registry,
-has a custom throw error method.
-
 <a name="registerErrorWithNumber"></a>
 ## registerErrorWithNumber(description, number) ⇒ <code>boolean</code>
 Add a new error message and corresponding number to the registry.
@@ -71,7 +56,6 @@ Add a new error message and corresponding number to the registry.
 
 - <code>[error](#error)</code> error - when incorrect arguments have been passed
 
-**Access:** public
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -83,7 +67,6 @@ Add a new error message and corresponding number to the registry.
 Get an error by it's number.
 
 **Returns**: <code>string</code> - - returns the message of the error
-**Access:** public
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -95,21 +78,37 @@ Get the whole registry with all the errors. This method returns
 the output of getAll from the Register class.
 
 **Returns**: <code>object</code> - - returns all the errors in the registry
-**Access:** public
 <a name="error"></a>
-## error(message, code) ⇒ <code>[error](#error)</code>
+## error(message, code) ⇒ <code>error</code>
 Custom method for error handling.
 
-**Access:** public
 
 | Param | Type | Description |
 | --- | --- | --- |
 | message | <code>string</code> | message / text of the error |
 | code | <code>int</code> | the number that the error has |
 
+## Contriubtion
+
+Any contribution will be highly appreciated. Just make sure that:
+
+1.Your code works.  
+2. You have 100% successful tests coverage.  
+3. You have comments in your code.  
+4. Follows eslint config. Exceptions are possible where that make sense.  
+
+## Tests
+
+  To run the test suite, first install the dependencies, then run `npm test`:
+
+```bash
+$ npm install
+$ npm test
+```
+
 ## License
 
-MIT © [Ivaylo Ivanov]()
+[MIT](https://github.com/esrol/esrol-autoloader/blob/master/LICENSE)
 
 
 [npm-image]: https://badge.fury.io/js/esrol-errors.svg
