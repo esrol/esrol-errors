@@ -17,8 +17,8 @@ $ npm install --save esrol-errors
 
 ```js
 'use strict';
-let Errors = require('esrol-errors');
-let errors = new Errors();
+const Errors = require('esrol-errors');
+const errors = new Errors();
 
 errors.registerErrorWithNumber('Some error message', 1);
 let all = errors.getAllErrors();
@@ -29,7 +29,9 @@ try {
   errors.error('the reason for this erros is to show some example', 1);
 } catch(e) {
   console.log (e);
+  console.log (e.stack);
 }
+
 ```
 
 ## Methods
